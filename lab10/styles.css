@@ -17,3 +17,10 @@ nav a{color: #000000;}
 nav a:hover{background-color: #818181;}
 h1, h2{color: #883737;}
 .footquote {float: right;}
+
+
+@media only screen and (max-width:100%){
+    nav{display: wrap}
+}
+
+
