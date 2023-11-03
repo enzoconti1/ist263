@@ -19,8 +19,9 @@ h1, h2{color: #883737;}
 .footquote {float: right;}
 
 
-@media only screen and (max-width:100%){
-    nav{display: wrap}
+@media only screen and (max-width:840px){
+    nav a{display: block}
+    nav a{padding: 10px;}
 }
 
 
