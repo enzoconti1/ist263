@@ -1,14 +1,14 @@
 /* #7d7d7d grey #bf8f58 tan #5886bf blue */
 
-body {background-color: #bf8f58;
-    color: #ffffff;
+body {background-color: #ffffff;
+    color: #000000;
 }
 a:hover {color: #c22323;}
 main p {background-color: #7d7d7d;
 padding: 20px;
 border: 2px solid #000000;
 }
-nav {background-color: #684a4a;
+nav {background-color: #f1b863;
 padding: 10px;
 margin-bottom: 30px;
 border: 2px solid #000000;
