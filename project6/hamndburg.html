@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.sidenav{
+    
+    overflow-x: hidden;
+}
+.closebtn{
+    color: rgb(10, 10, 11);
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">Menu</span>
+<div id="mySidenav" class="sidenav">
+    <div>
+        <a href="index.html">Home Page</a>
+        <a href="cwork.html">Course Work</a>
+        <a href="work.html">Work Experience</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+    </div>
+</div>
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 

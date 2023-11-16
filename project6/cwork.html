@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Work</title>
+    <style>
+        .skip{
+            background-color: #ffbf00;
+            padding: 5px;
+            border: 1px solid #000000;
+            text-decoration: none;
+            position: absolute; 
+            top: 10px;
+            left: -999px
+        }
+        .skip:focus {
+            left: 10px;
+        }
+        
+        nav{
+            
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .topheader{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .top3{
+            display: flex;
+            
+
+            
+            
+        
+        }
+        .top3 div{
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: 60px 60px 20px 60px;
+            padding: 40px;
+            padding-top: 20px;
+            font-weight: bolder;
+            
+            
+            
+        }
+        .top3 div p{
+            background-color: gray;
+            font-size: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            text-align: center;
+        
+        }
+        main{
+            background-color: #ffffff;
+            margin: 0px 50px 0px 50px;
+            border: 5px #000000 solid;
+            border-radius: 10px;
+            
+        }
+        body{
+            background-color: #4f1010;
+        }
+        .row1{
+            display: flex;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        .row2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row1 div{
+            margin: 0px 80px 50px 80px;
+            border: 5px #4f1010 solid;
+            border-radius: 20px;
+            padding: 20px;
+            flex: 1;
+        }
+        .row2 div{
+            margin: 0px 80px 50px 80px;
+            border: 5px #4f1010 solid;
+            border-radius: 20px;
+            padding: 20px;
+            flex: 1;
+            
+        }
+        .bottom {
+            display: flex;
+            justify-content: center; 
+            
+            
+        }
+
+        .bottom div {
+            flex: 1; 
+            text-align: center; 
+            padding: 10px; 
+            margin: 0px 0px 50px 0px;
+        }
+        .lilogo{
+            margin-right: 50px;
+            float: right;
+        }
+        .bottom div p{
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        .midheader{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 80px;
+        }
+        .bottomheader{
+            display: flex;
+            justify-content: center;
+        }
+                
+        .menubutn{
+            display: none;
+        }
+    
+        .sidenav{
+            display: none;
+        }
+        .bottom{
+            flex-wrap: wrap;
+        }
+        header{
+            background-color: #000000;
+        }
+        nav a{
+            padding: 0px;
+            border: 1px #000000 solid;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 1cm;
+            
+        }
+        
+
+        
+        @media screen and (max-width: 400px) {
+        main{
+        width: auto;
+        margin: 10px;
+        }
+        .sidenav{
+        position: fixed;
+        background-color: #000000;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        border: 5px #4f1010 solid;
+        height: 100%;
+        top: 0;
+        left: -10px;
+        border-radius: 5px;
+        display: block;
+        }
+        .closebtn{
+        color: rgb(10, 10, 11);
+        }   
+        .s401{
+            display: none;
+        }
+        .menubutn{
+            display: block;
+            font-size:30px;
+        }
+        .sidenav a {
+        padding: 8px 8px 8px 32px;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        display: block;
+        
+        }
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+        
+
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <span onclick="openNav()" class="menubutn">Menu</span>
+    <div id="mySidenav" class="sidenav">
+        <div>
+            <a href="index.html">Home Page</a>
+            <a href="cwork.html">Course Work</a>
+            <a href="work.html">Work Experience</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+        </div>
+    </div>
+    <a href="#main" tabindex="1" class="skip">Skip to content</a><br>
+    <nav class="s401">
+        
+        <a href="index.html">Home Page</a>
+        <a href="cwork.html">Course Work</a>
+        <a href="work.html">Work Experience</a>
+        
+    </nav>
+    </header>
+    
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    </header>
+    <main>
+        <h1 class="topheader" id="main">My Academic Experience!</h1>
+
+
+    <div class="top3">
+        <div class="first">
+            <p>Syracuse University</p>
+        </div>
+        <div>
+            <p>B.S Information management and Technology</p>
+        </div>
+        <div class="third">
+            <p>3.5 GPA</p>
+        </div>
+    </div>
+    <h1 class="midheader">Relevant Courses</h1>
+
+    <div class="row1">
+        <div>
+            Application Programing for Information Systems:<br>
+            This class focused on programming in python, utilizing API’s, online modules and other 
+            aspects of the coding language
+            Skills gained:
+            <ul>
+                <li>
+                    Proficiency in Python
+                </li>
+                <li>
+                    Problem solving
+                </li>
+            </ul>
+        </div>
+        <div>
+            Managing Information Systems Projects:<br>
+            This class took a dive into the field of project management, focusing on case studies and 
+            model projects.
+            Skills Gained:
+            <ul>
+                <li>Project Management</li>
+                <li>People Management</li>
+                <li>Collaboration</li>
+                <li>MS Projects</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row2">
+        <div>
+            Enterprise Risk Management: <br>
+            This class explored the Enterprise Risk Management process and the importance of good risk 
+            management.
+            Skills Gained:
+            <ul>
+                <li>Risk Management</li>
+                <li>Risk detection</li>
+                <li>Risk prevention</li>
+            </ul>
+            
+        </div>
+        <div>
+            Agile Project Management Methodologies: <br>
+            This class focused on non-standard project management methodologies that are considered 
+            agile and what it means to be “Agile” in the work environment.
+            Skills gained:
+            <ul>
+                <li>Understanding of Agile Methodologies</li>
+                <li>Execution of Agile methodologies</li>
+
+            </ul>
+            
+            
+
+        </div>
+    </div>
+
+    <h2 class="bottomheader">Technical Skills</h2>
+
+
+    <div class="bottom">
+        
+                <div>
+                
+                    <p>Python</p>
+                </div>
+                <div>
+                    <p>Excel</p>
+                </div>
+                <div>
+               
+                    <p>Word</p>
+                </div>
+                <div>
+               
+                    <p>Statistics</p>
+                </div>
+                <div>
+                
+                    <p>HTML</p>
+                </div>
+
+        
+    
+
+    </div>
+    </main>
+    <a href="https://www.linkedin.com/in/enzo-a-conti/"><img src="../media/logo-sized.png" alt="LinkedIn Logo" class="lilogo"> </a><br>
+
+</body>
+</html>

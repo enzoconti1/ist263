@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <style>
+        
+        .skip{
+            background-color: #ffbf00;
+            padding: 5px;
+            border: 1px solid #000000;
+            text-decoration: none;
+            position: absolute; 
+            top: 10px;
+            left: -999px
+        }
+        .skip:focus {
+            left: 10px;
+        }
+        
+        
+        .menubutn{
+            display: none;
+        }
+    
+        .sidenav{
+            display: none;
+        }
+
+        .s401{
+            
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        
+        @media screen and (max-width: 400px) {
+        .sidenav{
+        position: fixed;
+        background-color: #000000;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        border: 5px #4f1010 solid;
+        height: 100%;
+        top: 0;
+        left: -10px;
+        border-radius: 5px;
+        display: block;
+        }
+        .closebtn{
+        color: rgb(10, 10, 11);
+        }   
+        .s401{
+            display: none;
+        }
+        .menubutn{
+            display: block;
+            font-size:30px;
+        }
+        .sidenav a {
+        padding: 8px 8px 8px 32px;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        display: block;
+        
+        }
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+
+    }
+    .big{
+        display: flex;
+    }
+    .big div{
+        border: 2px #000000 solid;
+        margin: 20px;
+        padding: 10px;
+
+    }
+    </style>
+</head>
+<body>
+    <span onclick="openNav()" class="menubutn">Menu</span>
+    <div id="mySidenav" class="sidenav">
+        <div>
+            <a href="index.html">Home Page</a>
+            <a href="cwork.html">Course Work</a>
+            <a href="work.html">Work Experience</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+        </div>
+    </div>
+    <a href="#main" tabindex="1" class="skip">Skip to content</a><br>
+    <nav class="s401">
+        
+        <a href="index.html">Home Page</a>
+        <a href="cwork.html">Course Work</a>
+        <a href="work.html">Work Experience</a>
+        
+    </nav>
+    
+    
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    <p id="main">
+        Although it is very early on in my career and I still do not have much professional experience, I have had two very influential jobs that have helpped me grow as a person.
+    </p>
+
+    <h2>My Professional experience</h2>
+
+    <div class="big">
+        <div>
+            Manager – Parsons Family Farmstand
+            For two summers I worked at the Parsons Family Farmstand as manager
+            Some of my responsibilities included:
+            <ul>
+                <li>In charge of overseeing and facilitating daily tasks</li>
+                <li>Developing an maintaining relationships with customers and suppliers</li>
+                <li> Raised performance in area of sales, management and operations by identifying and targeting areas in need</li>
+            </ul>
+            <img src="../media/farm.jpg" width="200" alt="farm picture">
+            
+          
+        </div>
+        <div>
+            Counselor – Forman school
+            For two summers during the month of July I would work at a summer camp for children with learning disabilities
+            Some of my responsibilities included:
+            <ul>
+                <li>Offered guidance and advice to help cultivate self-esteem and community involvement.</li>
+                <li>Communicated closely with upper level management in order to devise programs and activities based
+                </li>
+                <li>
+                    Identified risk and resiliency factors within individual youth, peer groups, families, school and community and developed strategies for intervention
+                </li>
+                <li>
+                    Provided individual counseling services for students with adjustment issues and partnered to favilitate weekly support groups
+                </li>
+            
+            </ul>
+            <img src="../media/class.jpg" width="200" alt="class picture">
+            
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        .skip{
+            background-color: #ffbf00;
+            padding: 5px;
+            border: 1px solid #000000;
+            text-decoration: none;
+            position: absolute;
+            top: 10px;
+            left: -999px
+        }
+        .skip:focus {
+            left: 10px;
+        }
+         .hsimg{
+                float: left;
+                margin: 0px 20px 20px 0px;
+                
+                height: auto; /* This ensures that the image maintains its aspect ratio */
+                display: block; /* This removes any extra space below the image */
+                margin: auto; /* Center the image on the page */
+
+               
+               
+               
+              
+         }
+         main {
+            margin: 0px 50px 0px 50px;
+            background-color: #ffffff;
+            padding: 50px;
+            border: 5px #000000 solid;
+    
+        }
+        
+        nav{
+            
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        header{
+            background-color: #000000;
+        }
+        .d1{
+            display: flex;
+            justify-content: center;
+        }
+        nav a{
+            padding: 0px;
+            border: 1px #000000 solid;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 1cm;
+            
+        }
+        body{
+            background-color: #4f1010;
+            font-size: 20px;
+    
+
+        }
+        .topheader{
+            color: #ffffff;
+        }
+        .bigdiv{display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+        }
+        .label{
+            font-size: 30px;
+        }
+        .int1 , .int2, .int3 {
+            flex: 1;
+            text-align: center;
+            margin: 0 10px;
+            
+        
+        }
+        .topdiv{
+            display:flex;
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+        .topdiv div{
+            flex:1;
+            
+            
+        }
+        .middleheading{
+            display: flex;
+            justify-content: center;
+        }
+        .lilogo{
+            margin-right: 50px;
+            float: right;
+        }
+        .menubutn{
+            display: none;
+        }
+    
+        .sidenav{
+            display: none;
+        }
+        
+
+        @media screen and (max-width: 800px){
+            .hsimg{
+                width: 300px;
+            }
+        }
+        @media screen and (max-width:520px) {
+            .hsimg{
+                width: 260px;
+            }
+        }
+        @media screen and (max-width: 400px) {
+        .hsimg{
+            width: 200px;
+            height: auto;
+        }
+        main{
+            width: auto;
+            margin: 10px;
+        }
+        .sidenav{
+        position: fixed;
+        background-color: #000000;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        border: 5px #4f1010 solid;
+        height: 100%;
+        top: 0;
+        left: -10px;
+        border-radius: 5px;
+        display: block;
+        }
+        .closebtn{
+        color: rgb(10, 10, 11);
+        }   
+        .s401{
+            display: none;
+        }
+        .menubutn{
+            display: block;
+            font-size:30px;
+        }
+        .sidenav a {
+        padding: 8px 8px 8px 32px;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        display: block;
+        
+        }
+        @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+
+    }
+        
+        
+    </style>
+</head>
+
+<body>
+    <span onclick="openNav()" class="menubutn">Menu</span>
+    <div id="mySidenav" class="sidenav">
+        <div>
+            <a href="index.html">Home Page</a>
+            <a href="cwork.html">Course Work</a>
+            <a href="work.html">Work Experience</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    <header class="s401">
+        <a href="#main" tabindex="1" class="skip">Skip to content</a><br>
+        <nav>
+            
+            <a href="index.html">Home Page</a>
+            <a href="cwork.html">Course Work</a>
+            <a href="work.html">Work Experience</a>
+            
+        </nav>
+        <div class="d1">
+            <h1 class="topheader">
+                Hello, Welcome to my website!
+            </h1>
+        </div>
+    </header>
+<main>
+<div class="topdiv">
+    <div>
+    <img src="../media/headshot.jpg" width="550" height="500" alt="Professional Headshot" class="hsimg">
+    </div>
+    <div>
+    <h1 id="main">About Me!</h1>
+    <p>
+    My name is Enzo Conti, I’m a junior at Syracuse University studying Information Management and 
+    Technology with a concentration in Project Management. I am very interested in projects and 
+    understanding how they are carried out, I hope to someday be a project manager myself. I love 
+    problem solving and can offer a vast amount of professional skills.
+    </p>
+    </div>
+</div>
+
+<p>
+    In terms of my extra curriculars I am currently the Technology officer for Debrief Magazine where I am in
+    charge of managing our website and posting our writers works
+</p>
+<br>
+<div class="middleheading">
+    <h2>
+        Outside of school I am very interested in:
+    </h2>
+</div>
+    
+
+
+<div class="bigdiv">
+    <div class="int1">
+        <p class="label">
+            Weight training
+        </p>
+        <img src="../media/gympicture.jpg" alt="picture in a gym" width="200">
+        <p>
+            I spend most of my free time in the gym, being active has always been a big part of my life and I have 
+            recently become passionate about weight lifting
+        </p>
+    </div>
+    <div class="int2">
+        <p class="label">Fishing</p>
+
+        <img src="../media/IMG_1907.jpg" alt="Picture with a fish" width="200">    
+        <p>
+            During the summer months I can always be found out on local rivers fly fishing
+        </p>
+    </div>
+    <div class="int3">
+        <p class="label">
+            Coding
+        </p>
+        <img src="../media/code.jpg" alt="picture of code" width="200">
+        <p>
+            Ive always had  fascination with computers and enjoy casually Coding
+        </p>
+    </div>
+</div>
+
+
+</main>
+<a href="https://www.linkedin.com/in/enzo-a-conti/"><img src="../media/logo-sized.png" alt="LinkedIn Logo" class="lilogo"> </a><br>
+
+
+</body>
+</html>
