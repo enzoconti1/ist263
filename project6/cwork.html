@@ -33,6 +33,7 @@
         }
         .top3{
             display: flex;
+            flex-wrap: wrap;
             
 
             
@@ -48,10 +49,12 @@
             padding: 40px;
             padding-top: 20px;
             font-weight: bolder;
-            
+            flex-basis: 100%;
+            flex: 1;
             
             
         }
+
         .top3 div p{
             background-color: gray;
             font-size: 25px;
@@ -59,6 +62,7 @@
             border-radius: 10px;
             flex: 1;
             text-align: center;
+            
         
         }
         main{
@@ -235,7 +239,7 @@
         <div class="first">
             <p>Syracuse University</p>
         </div>
-        <div>
+        <div class="second">
             <p>B.S Information management and Technology</p>
         </div>
         <div class="third">
