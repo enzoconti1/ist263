@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change (){
+        document.getElementById("arrow").setAttribute("src", "http://laferger.github.io/ist263/images/arrow_over.PNG");
+        }
+        function changeBack (){
+        document.getElementById("arrow").setAttribute("src", "http://laferger.github.io/ist263/images/arrow.PNG");
+        }
+        function rightAnswer(){
+            document.getElementById("right").innerHTML = "<span style='color:green'>False is the correct answer!</span>";
+        }
+        function wrongAnswer(){
+            document.getElementById("wrong").innerHTML = "<span style='color:red'>True is the wrong answer!</span>";
+        }
+        function changeColor (){
+            document.getElementById("page").style.backgroundColor = document.getElementById("picker").value;
+        }
+        function showNav() {
+            document.getElementById("navlinks").style.display = "block";
+        }
+        function hideNav() {
+            document.getElementById("navlinks").style.display = "none";
+        }
+    </script>
+    <style>
+        #hamicon{
+            width: 40px;
+        }
+        @media only screen and (min-width: 800px){
+            #hamicon, #close{display: none;}
+        }
+        @media only screen and (max-width: 799px){
+            a {
+                padding: 5px;
+                display: block;
+                border: 1px solid #333333;
+            }
+            #navlinks{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+    <div class="firstrow">
+        <img id="hamicon" src="http://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" onclick="showNav()">
+        <p id="close" onclick="hideNav()">X</p>
+    </div>
+    <nav id="navlinks">
+        <a href="about.html"> about</a>
+        <a href="skills.html"> skills</a>
+        <a href="contact.html"> contact</a>
+        
+    </nav>
+<body id="page">
+    <img id= "arrow" onmouseover="change()" onmouseout="changeBack()" src="http://laferger.github.io/ist263/images/arrow.PNG">
+    <p>Java and JavaScript are the same thing</p>
+    <p id="wrong" onclick="wrongAnswer()">True</p>
+    <p id="right" onclick="rightAnswer()">False</p>
+    <form>
+        <input id="picker" type="color" onchange="changeColor()">
+    </form>
+</body>
+</html>

@@ -108,12 +108,24 @@
         .sidenav{
             display: none;
         }
-        
+        @media screen and (max-width: 1000px) {
+            .hsimg{
+                float: top;
+            }
+            .topdiv{
+                display: block;
+            }
+        }
 
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 900px){
             .hsimg{
                 width: 300px;
+                float: top;
             }
+            .topdiv{
+                display: block;
+            }
+            
         }
         @media screen and (max-width:520px) {
             .hsimg{
