@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <style>
+        h1{
+            font-family: 'Oswald', sans-serif;
+        }
+        .skip {
+            background-color: #ffbf00;
+            padding: 5px;
+            border: 1px solid #000000;
+            text-decoration: none;
+            position: absolute;
+            top: 10px;
+            left: -999px;
+        }
+
+        .skip:focus {
+            left: 10px;
+        }
+        body {
+            background-color:  #4f1010;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #232323;
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+        }
+        .sidenav {
+            display: none;
+        }
+        .menubutn {
+            display: none;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            display: block;
+            float: left;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .main-content {
+            background-color: #393939;
+            margin: 20px;
+            border-radius: 10px;
+            border: 1px solid #000000;
+            padding: 10px;
+            box-shadow: 10px 10px 10px #000000;
+            color: #ffffff;
+        }
+        .main-content h2{
+            text-align: center;
+        }
+
+        .big {
+            color: #000000;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .lilogo {
+            margin-right: 20px;
+            float: right;
+            margin-top: 10px;
+        }
+        .big div {
+            flex: 1;
+            margin: 20px;
+            padding: 20px;
+            border: 2px #333 solid;
+            border-radius: 50px;
+            background-color: #ffffff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 800px) {
+            .sidenav {
+                position: fixed;
+                background-color: #232323;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                border: 5px solid #7d7d7d;
+                height: 100%;
+                top: 0;
+                left: -10px;
+                border-radius: 5px;
+                display: block;
+            }
+            .closebtn {
+                color: #ffffff;
+            }
+            .s401 a {
+                display: none;
+            }
+            .menubutn:hover{
+                background-color: #ddd;
+                color: #333;
+            }
+            .menubutn {
+                text-align: center;
+                color: #ffffff;
+                display: block;
+                font-size: 20px;
+                margin-top: 10px;
+            }
+            .sidenav a {
+                padding: 8px 8px 8px 16px;
+                font-size: 20px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+           
+
+            .big div {
+                flex: 100%;
+            }
+        }
+    </style>
+    <script>
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+</head>
+<body>
+    
+    <div id="mySidenav" class="sidenav">
+        <div>
+            <a href="index.html" >Home Page</a>
+            <a href="cwork.html">Course Work</a>
+            <a href="work.html">Work Experience</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+        </div>
+    </div>
+    <header>
+        <a href="#main" tabindex="1" class="skip">Skip to content</a><br>
+        <h1>Work Experience</h1>
+    </header>
+    
+    <nav class="s401">
+        <p onclick="openNav()" class="menubutn">Menu:</p>
+        <a href="index.html">Home Page</a>
+        <a href="cwork.html">Course Work</a>
+        <a href="work.html">Work Experience</a>
+    </nav>
+
+    <div class="main-content" id="main">
+        <h2>My Professional Experience</h2>
+        <p>
+            Although it is very early in my career and I still do not have much professional experience,
+            I have had two very influential jobs that have helped me grow as a professional.
+        </p>
+
+        <div class="big">
+            <div>
+                <h3>Manager – Parsons Family Farmstand</h3>
+                <p>For two summers, I worked at the Parsons Family Farmstand as a manager. Some of my responsibilities included:</p>
+                <ul>
+                    <li>In charge of overseeing and facilitating daily tasks</li>
+                    <li>Developing and maintaining relationships with customers and suppliers</li>
+                    <li>Raised performance in areas of sales, management, and operations</li>
+                </ul>
+                <img src="../media/farm.jpg" alt="farm picture">
+            </div>
+            
+            <div>
+                <h3>Counselor – Forman School</h3>
+                <p>For two summers during the month of July, I worked at a summer camp for children with learning disabilities. Some of my responsibilities included:</p>
+                <ul>
+                    <li>Offered guidance and advice to help cultivate self-esteem and community involvement</li>
+                    <li>Communicated closely with upper-level management to devise programs and activities</li>
+                    <li>Identified risk and resiliency factors within individual youth and developed intervention strategies</li>
+                    <li>Provided individual counseling services for students with adjustment issues</li>
+                </ul>
+                <img src="../media/class.jpg" alt="class picture">
+            </div>
+        </div>
+    </div>
+    <a href="https://www.linkedin.com/in/enzo-a-conti/"><img src="../media/logo-sized.png" alt="LinkedIn Logo" class="lilogo"></a>
+
+</body>
+</html>

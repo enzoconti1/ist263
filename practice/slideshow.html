@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Slideshow</title>
+    <style>
+        .bigdiv {
+            border: 2px solid #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out; /* Add a transition effect on opacity */
+        }
+
+        .slide.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .arrow {
+            cursor: pointer;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        #slide1 {
+            margin: 0 auto; /* Center the container horizontally */
+        }
+    </style>
+</head>
+<body>
+
+<div class="bigdiv">
+    <div class="slide int1 active" id="slide1">
+        <p class="label">
+            Weight Training
+        </p>
+        <img src="../media/gympicture.jpg" alt="Picture in a gym">
+        <p>
+            I spend most of my free time in the gym; being active has always been a big part of my life, and I have 
+            recently become passionate about weight lifting.
+        </p>
+    </div>
+    <div class="slide int2">
+        <p class="label">Fishing</p>
+        <img src="../media/fishingpic.jpg" alt="Picture with a fish" width="300px">    
+        <p>
+            During the summer months, I can always be found out on local rivers fly fishing.
+        </p>
+    </div>
+    <div class="slide int3">
+        <p class="label">
+            Coding
+        </p>
+        <img src="../media/code.png" alt="Picture of code">
+        <p>
+            I've always had a fascination with computers and enjoy casually coding.
+        </p>
+    </div>
+    <div class="arrow" onclick="prevSlide()">Previous</div>
+    <div class="arrow" onclick="nextSlide()">Next</div>
+</div>
+
+<script>
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        const slides = document.querySelectorAll('.slide');
+        
+        if (index >= 0 && index < slides.length) {
+            currentSlide = index;
+        } else if (index < 0) {
+            currentSlide = slides.length - 1;
+        } else {
+            currentSlide = 0;
+        }
+
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === currentSlide);
+        });
+    }
+
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Work</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        h1{
+            font-family: 'Oswald', sans-serif;
+        }
+        .skip {
+            background-color: #ffbf00;
+            padding: 5px;
+            border: 1px solid #000000;
+            text-decoration: none;
+            position: absolute;
+            top: 10px;
+            left: -999px;
+        }
+        .skip:focus {
+            left: 10px;
+        }
+        .row{
+            display: flex;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        .row div{
+            margin: 0px 80px 50px 80px;
+            border: 5px #000000 solid;
+            border-radius: 20px;
+            padding: 20px;
+            flex: 1;
+        }
+        .top3{
+            display: flex;
+            flex-wrap: wrap;
+            background-image: url(../media/banner.jpg);
+            background-repeat: no-repeat;
+        }
+        .top3 div{
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: 60px 60px 20px 60px;
+            padding: 40px;
+            padding-top: 20px;
+            font-weight: bolder;
+            flex-basis: 100%;
+            flex: 1;
+            align-items: center;
+            
+            
+        }
+        .top3 div p{
+            background-color: #ffffff;
+            font-size: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            text-align: center;
+            border: 2px #000000 solid;
+            align-items: center;
+            color: #000000;
+            
+        
+        }
+        #top31 p{
+            padding:60px 0px 60px 0px;
+        }
+        #top33 p{
+            padding:73px 0px 73px 0px;
+        }
+
+        body {
+            background-color: #4f1010;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #212121;
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        .menubtn {
+            display: none;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            margin-top: 0;
+        }
+
+        nav a {
+            display: block;
+            float: left;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+       
+
+        main {
+            background-color: #393939;
+            margin: 20px;
+            border-radius: 10px;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 10px 10px 10px #000000;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 18px;
+            color: #000000;
+        }
+        .sidenav {
+            display: none;
+        }
+        .menubutn {
+            display: none;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .row div {
+            background-color: #fff;
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .bottom div {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            color: #000000;
+            background-color: #ffffff;
+        }
+
+        .lilogo {
+            margin-right: 20px;
+            float: right;
+        }
+        @media screen and(max-width: 1041px) {
+            .top3{
+            display: flex;
+            flex-wrap: wrap;
+            background-image: none;
+            }
+            
+        }
+        @media screen and (max-width: 800px) {
+            .sidenav {
+                position: fixed;
+                background-color: #232323;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                border: 5px solid #7d7d7d;
+                height: 100%;
+                top: 0;
+                left: -10px;
+                border-radius: 5px;
+                display: block;
+            }
+            .closebtn {
+                color: #ffffff;
+            }
+            .s401 a {
+                display: none;
+            }
+            
+            .menubutn {
+                text-align: center;
+                color: #fff;
+                display: block;
+                font-size: 20px;
+                margin-top: 10px;
+            }
+            .menubutn:hover{
+                background-color: #ddd;
+                color: #333;
+            }
+            .sidenav a {
+                padding: 8px 8px 8px 16px;
+                font-size: 20px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+                display: block;
+            }
+        }
+
+        
+
+        @media screen and (max-width: 600px) {
+            header {
+                padding: 15px 10px;
+            }
+
+            
+            main {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .row div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div id="mySidenav" class="sidenav">
+            <div>
+                <a href="index.html" >Home Page</a>
+                <a href="cwork.html">Course Work</a>
+                <a href="work.html">Work Experience</a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+            </div>
+        </div>
+        <a href="#main" tabindex="1" class="skip">Skip to content</a><br>
+        <h1>My Academic Experience!</h1>
+        
+    </header>
+    <nav class="s401">
+        <p onclick="openNav()" class="menubutn">Menu:</p>
+        <a href="index.html">Home Page</a>
+        <a href="cwork.html">Course Work</a>
+        <a href="work.html">Work Experience</a>
+    </nav>
+    <main>
+        
+
+        <div class="top3" id="main">
+            <div id="top31">
+                <p>Syracuse University</p>
+            </div>
+            <div>
+                <p>B.S Information Management and Technology</p>
+            </div>
+            <div id="top33">
+                <p>3.5 GPA</p>
+            </div>
+        </div>
+
+        <h2>Relevant Courses</h2>
+
+        <div class="row">
+            <div>
+                <p><strong>Application Programming for Information Systems:</strong><br>
+                This class focused on programming in Python, utilizing APIs, online modules, and other aspects of the coding language.
+                Skills gained:</p>
+                <ul>
+                    <li>Proficiency in Python</li>
+                    <li>Problem-solving</li>
+                </ul>
+            </div>
+            <div>
+                <p><strong>Managing Information Systems Projects:</strong><br>
+                This class took a dive into the field of project management, focusing on case studies and model projects.
+                Skills Gained:</p>
+                <ul>
+                    <li>Project Management</li>
+                    <li>People Management</li>
+                    <li>Collaboration</li>
+                    <li>MS Projects</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <p><strong>Enterprise Risk Management:</strong><br>
+                This class explored the Enterprise Risk Management process and the importance of good risk management.
+                Skills Gained:</p>
+                <ul>
+                    <li>Risk Management</li>
+                    <li>Risk detection</li>
+                    <li>Risk prevention</li>
+                </ul>
+            </div>
+            <div>
+                <p><strong>Agile Project Management Methodologies:</strong><br>
+                This class focused on non-standard project management methodologies that are considered agile and what it means to be “Agile” in the work environment.
+                Skills gained:</p>
+                <ul>
+                    <li>Understanding of Agile Methodologies</li>
+                    <li>Execution of Agile methodologies</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Technical Skills</h2>
+
+        <div class="bottom">
+            <div>Python</div>
+            <div>Excel</div>
+            <div>Word</div>
+            <div>Statistics</div>
+            <div>HTML</div>
+        </div>
+    </main>
+
+    <a href="https://www.linkedin.com/in/enzo-a-conti/"><img src="../media/logo-sized.png" alt="LinkedIn Logo" class="lilogo"></a>
+
+    <script>
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+</body>
+</html>
