@@ -182,6 +182,9 @@
         .arrowbtn div{
             justify-content: space-around;
         }
+        #mySidenav{
+            display: none;
+        }
         
         @media screen and (max-width: 1000px) {
             .hsimg{
@@ -228,6 +231,7 @@
                 padding: 20px;
                 margin: 10px;
             }
+            
             .hsimg {
                 width: 200px;
                 height: auto;
@@ -246,7 +250,7 @@
                 top: 0;
                 left: -10px;
                 border-radius: 5px;
-                display: block;
+                
             }
             .closebtn {
                 color: #ffffff;
@@ -316,11 +320,11 @@ function nextSlide() {
 showSlide(currentSlide + 1);
 }
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.display = "block";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.display = "none";
 }
 </script>
 </head>
@@ -346,7 +350,7 @@ function closeNav() {
         </div>
         <nav class="s401">
             <p onclick="openNav()" class="menubutn">Menu:</p>
-            <a href="index.html" tabindex="2">Home Page</a>
+            <a onclick="closeNav()" href="index.html" tabindex="2">Home Page</a>
             <a href="cwork.html" tabindex="3">Course Work</a>
             <a href="work.html"  tabindex="4">Work Experience</a>
         </nav>
@@ -392,7 +396,7 @@ function closeNav() {
             </div>
             <div class="slide int2">
                 <p class="label">Fishing</p>
-                <img src="../media/fishingpic.jpg" alt="Picture with a fish" width=>    
+                <img src="../media/fishingpic.jpg" alt="Picture with a fish">    
                 <p>
                     During the summer months, I can always be found out on local rivers fly fishing.
                 </p>

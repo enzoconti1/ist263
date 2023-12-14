@@ -197,7 +197,7 @@
                 top: 0;
                 left: -10px;
                 border-radius: 5px;
-                display: block;
+                
             }
             .closebtn {
                 color: #ffffff;
@@ -218,6 +218,7 @@
                 color: #333;
             }
             .sidenav a {
+                text-align: left;
                 padding: 8px 8px 8px 16px;
                 font-size: 20px;
                 color: #818181;
@@ -343,12 +344,12 @@
     <a href="https://www.linkedin.com/in/enzo-a-conti/"><img src="../media/logo-sized.png" alt="LinkedIn Logo" class="lilogo"></a>
 
     <script>
-        function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.display = "none";
 }
     </script>
 </body>
